@@ -283,7 +283,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995835028}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995835028}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: SceneChange4
         m_Mode: 1
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995835028}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995835028}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
@@ -1616,7 +1616,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995835028}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: SceneChange3
         m_Mode: 1
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995835028}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995835023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 816bfc29e6c2b4465a0ebf5910f36303, type: 3}
+  m_Script: {fileID: 11500000, guid: c1c607c55179249deb4fe809e4e6da18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -2090,8 +2090,6 @@ MonoBehaviour:
   Choice1b: {fileID: 1992480315}
   NextScene1Button: {fileID: 1500687873}
   NextScene2Button: {fileID: 2015028362}
-  NextScene3Button: {fileID: 1722514655}
-  NextScene4Button: {fileID: 743116300}
   nextButton: {fileID: 912775385}
 --- !u!1 &2015028362
 GameObject:
@@ -2177,7 +2175,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1995835028}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: SceneChange2
         m_Mode: 1
