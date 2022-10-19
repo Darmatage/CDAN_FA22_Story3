@@ -54,48 +54,48 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
                ArtChar1.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "Jeda";
-                Char1speech.text = "Wakey wakey, human.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Narration";
+                Char2speech.text = "You look down at the whip and back at the ringmaster. You think to yourself that you can't win another fight at this rate. With your remaining breath, you sprint out of the tent.";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wuh..? What happened?";
+                Char2name.text = "Player";
+                Char2speech.text = "I think I lost them, lemme hide behind this booth to catch my breath.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
+                Char1name.text = "Ringmaster";
+                Char1speech.text = "Oh, how foolish can you be, outsider?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char2name.text = "Narration";
+                Char2speech.text = "Before you even get a breath, the Ringmaster is looming over you from the other side of the booth. They crack their whip around your neck once again and yank you up to eye level.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char2name.text = "Player";
+                Char2speech.text = "Let go of me, you freak!";
         }
-       else if (primeInt == 8){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
+       else if (primeInt ==7){
+                Char1name.text = "Ringmaster";
+                Char1speech.text = "Awe, how rude. I'm no freak, but you wouldn't know that because we haven't even properly gotten to know each other. Well, not yet…";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+       else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Narration";
+                Char2speech.text = "Your vision goes dark as you lose consciousness.";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
