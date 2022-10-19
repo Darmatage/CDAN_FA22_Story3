@@ -404,7 +404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: go barrell
+  m_Text: "Look into the tent where you heard the tiger\u2019s growl"
 --- !u!222 &536219921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: tent
+  m_Text: Stare back at the rabbit
 --- !u!222 &567749755
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -926,7 +926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: tent
+  m_Text: Approach the talking barrel
 --- !u!222 &1053513720
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1456,7 +1456,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: tent
+  m_Text: Follow the hot lady
 --- !u!222 &1526418246
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2090,6 +2090,8 @@ MonoBehaviour:
   Choice1b: {fileID: 1992480315}
   NextScene1Button: {fileID: 1500687873}
   NextScene2Button: {fileID: 2015028362}
+  NextScene3Button: {fileID: 1722514655}
+  NextScene4Button: {fileID: 743116300}
   nextButton: {fileID: 912775385}
 --- !u!1 &2015028362
 GameObject:
