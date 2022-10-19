@@ -7,14 +7,20 @@ using UnityEngine.Audio;
 
 public class Scene2dDialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
-        public Text Char1name;
+        public Text Char1name;	//player
         public Text Char1speech;
-        public Text Char2name;
+        public Text Char2name;	//karl
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+       public Text Char3name;	//narrator
+       public Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ArtChar1;
+        public GameObject ArtChar1a;
+		public GameObject ArtChar1b;
+		public GameObject ArtChar1c;
+		public GameObject ArtChar1d;
+		public GameObject ArtChar1e;
+		public GameObject ArtChar1f;
+		
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -28,7 +34,13 @@ public class Scene2dDialogue : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
-        ArtChar1.SetActive(false);
+        ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
+		ArtChar1e.SetActive(false);
+		ArtChar1f.SetActive(false);
+		
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -52,18 +64,22 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(true);
+               ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Jeda";
                 Char1speech.text = "Wakey wakey, human.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Wuh..? What happened?";
+				Char3name.text = "";
+                Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
@@ -71,12 +87,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "I know I did not hit you that hard.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Hit me? Why?";
+				Char3name.text = "";
+                Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
@@ -84,18 +104,24 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Why do you think I know anything?";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt == 8){
                 Char1name.text = "Jeda";
                 Char1speech.text = "Do not play the stupid. You will take me to him.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -108,12 +134,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Then you are no use to me, and must be silenced.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt == 101){
                 Char1name.text = "Jeda";
                 Char1speech.text = "Come back here! Do not think you can hide from me!";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -124,12 +154,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt == 201){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+				Char3name.text = "";
+                Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -142,6 +176,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "I don't know what you're talking about!";
+				Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -153,6 +189,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Sure, anything you want... just lay off the club.";
+				Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
