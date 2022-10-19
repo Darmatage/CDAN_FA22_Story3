@@ -11,8 +11,8 @@ public class Scene1Dialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+       public Text Char3name;
+       public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
        //public GameObject ArtChar2;
@@ -58,85 +58,181 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
                ArtChar1.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "Jeda";
-                Char1speech.text = "Wakey wakey, human.";
+                Char1name.text = "";
+                Char1speech.text = "After a few hours of surfing the internet, you come across a strange site. It lists the location of a nearby abandoned circus, often visited by rowdy teens who spout ghost stories about the place. Having nothing better to do, you decide to drive out to this place and see if the rumors are true.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wuh..? What happened?";
+                Char1name.text = "You";
+                Char1speech.text = "At least the circus is actually here. I’m surprised it still looks this good after a hundred years or so.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
+                Char1name.text = "";
+                Char1speech.text = "You enter through a tall gate, its sign half torn. You can barely make out the letters, [Circus Name]. A dilapidated tent stands in the distance, barely held up by the ropes attaching it to the ground. Many smaller tents are scattered around, as well as stalls.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char2name.text = "Ringmaster";
+                Char2speech.text = "Well, well, look what the clown dragged in!";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char1name.text = "";
+                Char1speech.text = "Out of nowhere, a loud voice greets you. A figure makes themselves known from behind one of the stalls, sporting a hat too big for their head and dressed in fancy clothing. They flash a big smile, taking your hand in one of theirs and shaking it – too much.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char1name.text = "You";
+                Char1speech.text = "Ah, hello!";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt == 8){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
+                Char1name.text = "";
+                Char1speech.text = "You’re caught off guard by the eccentric nature of this person, and left with questions.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                //nextButton.SetActive(false);
+                //allowSpace = false;
+                //Choice1a.SetActive(true); // function Choice1aFunct()
+                //Choice1b.SetActive(true); // function Choice1bFunct()
         }
 // ENCOUNTER AFTER CHOICE #1
-       else if (primeInt == 100){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Then you are no use to me, and must be silenced.";
+       else if (primeInt == 9){
+                Char1name.text = "You";
+                Char1speech.text = "Nice to meet you, er–";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 101){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Come back here! Do not think you can hide from me!";
-                Char2name.text = "";
-                Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-        }
-
-       else if (primeInt == 200){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 201){
+       else if (primeInt == 10){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
+                Char2name.text = "Ringmaster";
+                Char2speech.text = "Just call me The Ringmaster!";
+                //nextButton.SetActive(false);
+                //allowSpace = false;
+                //NextScene1Button.SetActive(true);
+        }
+
+       else if (primeInt == 11){
+                Char1name.text = "You";
+                Char1speech.text = "…right. So, uh, are you cosplaying or something? I wasn’t really expecting anyone else here, especially this late at night…";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 12){
+                Char1name.text = "";
+                Char1speech.text = "The Ringmaster gives you a quizzical look, their only response a slight shrug of their shoulders.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                //nextButton.SetActive(false);
+                //allowSpace = false;
+                //NextScene2Button.SetActive(true);
+        }
+        else if (primeInt == 13){
+                 Char1name.text = "";
+                 Char1speech.text = "";
+                 Char2name.text = "Ringmaster";
+                 Char2speech.text = "‘Cosplaying?’ What a peculiar term.";
+        }
+        else if (primeInt == 14){
+                 Char1name.text = "";
+                 Char1speech.text = "They seem to ignore that question, instead moving on with that same enthusiasm from before.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 15){
+                 Char1name.text = "";
+                 Char1speech.text = "";
+                 Char2name.text = "Ringmaster";
+                 Char2speech.text = "Anywho, you’re at the [Circus Name]! A fine place for anyone looking for a getaway from the monotonous reality we are all subject to!";
+        }
+        else if (primeInt == 16){
+                 Char1name.text = "";
+                 Char1speech.text = "They swing on their heel, now beside you as they wrap an arm around your shoulder and gesture to…what used to be the circus.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 17){
+                 Char1name.text = "";
+                 Char1speech.text = "";
+                 Char2name.text = "Ringmaster";
+                 Char2speech.text = "Don’t be shy, my carnies and I are just ecstatic to show you just what we can do! I’m sure you’ll love each and every act!";
+        }
+        else if (primeInt == 18){
+                 Char1name.text = "";
+                 Char1speech.text = "You’re unsure whether or not to mention the fact that the circus is literally abandoned, but decide to keep your mouth shut.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 19){
+                 Char1name.text = "You";
+                 Char1speech.text = "Okay…so, I had some questions about this place–";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 20){
+                 Char1name.text = "";
+                 Char1speech.text = "The one-sided conversation is cut short by a…howl? Whatever it is, it’s deep, and sounds like it came from the forest just beyond the circus tent. Out of the corner of your eye, you see the Ringmaster’s pleasant grin drop for a few seconds. Replaced by a scowl, before they quickly bring their act together and swing around again in front of you.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 21){
+                 Char1name.text = "";
+                 Char1speech.text = "";
+                 Char2name.text = "Ringmaster";
+                 Char2speech.text = "Ah, destiny calls! Don’t move a muscle, I’ll be right back to give you a grand old tour!";
+        }
+        else if (primeInt == 22){
+                 Char1name.text = "";
+                 Char1speech.text = "And just like that, they’re gone. For a few minutes you do stay put, but after fifteen minutes go by, and then twenty, you decide to stop sitting around and waiting. As you head deeper into the area, several curious things seem to happen all at once.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 23){
+                 Char1name.text = "";
+                 Char1speech.text = "A strange noise comes from one of the larger tents, akin to a tiger’s growl.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 24){
+                 Char1name.text = "";
+                 Char1speech.text = "An unnaturally tall woman heading inside one of the abandoned dressing rooms in the distance.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 25){
+                 Char1name.text = "";
+                 Char1speech.text = "A considerably large barrel off to the side of the main tent, and muffled noises coming from within it.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 26){
+                 Char1name.text = "";
+                 Char1speech.text = "And a small bunny, just staring at you from a few feet away.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt == 27){
+                 Char1name.text = "You";
+                 Char1speech.text = "Huh.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+                 nextButton.SetActive(false);
+                 allowSpace = false;
+                 NextScene1Button.SetActive(true);
+                 NextScene2Button.SetActive(true);
+                 NextScene3Button.SetActive(true);
+                 NextScene4Button.SetActive(true);
         }
      }
 
@@ -171,9 +267,9 @@ public void talking(){         // main story function. Players hit next to progr
                 SceneManager.LoadScene("Scene2b");
         }
         public void SceneChange3(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene2c");
         }
         public void SceneChange4(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene2d");
         }
 }
