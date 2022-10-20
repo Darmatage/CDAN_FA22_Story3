@@ -11,8 +11,8 @@ public class Scene0Dialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+       public Text Char3name;
+       public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
        //public GameObject ArtChar2;
@@ -56,20 +56,34 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(true);
+               ArtChar1.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
-                Char1speech.text = "Once you’re back outside, you feel a sense of accomplishment wash over you. The pieces are starting to fall together slowly, one by one. But you’re not done yet.";
+                Char1speech.text = "Once you’re back outside, you feel a sense of accomplishment wash over you.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
         }
         else if (primeInt ==3){
+                 Char1name.text = "";
+                 Char1speech.text = "The pieces are starting to fall together slowly, one by one.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt ==4){
+                 Char1name.text = "";
+                 Char1speech.text = "But you’re not done yet.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+        }
+        else if (primeInt ==5){
                  Char1name.text = "";
                  Char1speech.text = "You take a look around again, scratching your head as you try to figure out where to go next.";
                  Char2name.text = "";
                  Char2speech.text = "";
         }
-       else if (primeInt ==4){
+       else if (primeInt ==6){
                 Char1name.text = "";
                 Char1speech.text = "You take a look around again, scratching your head as you try to figure out where to go next.";
                 Char2name.text = "";

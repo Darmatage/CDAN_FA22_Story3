@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &42970697 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+  m_PrefabInstance: {fileID: 1628722398506394548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &267154726
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +210,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267154726}
   m_CullTransparentMesh: 1
+--- !u!114 &291562691 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4498134246797121255, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+  m_PrefabInstance: {fileID: 1628722398506394548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &366835721
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +305,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene0Dialogue, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -404,7 +426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Look into the tent where you heard the tiger\u2019s growl"
+  m_Text: Look into the tent
 --- !u!222 &536219921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -484,7 +506,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stare back at the rabbit
+  m_Text: Stare at the rabbit
 --- !u!222 &567749755
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -577,8 +599,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene0Dialogue, Assembly-CSharp
         m_MethodName: SceneChange4
         m_Mode: 1
         m_Arguments:
@@ -721,8 +743,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene0Dialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -926,7 +948,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Approach the talking barrel
+  m_Text: Approach barrel
 --- !u!222 &1053513720
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1255,8 +1277,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene0Dialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
@@ -1456,7 +1478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Follow the hot lady
+  m_Text: Follow the lady
 --- !u!222 &1526418246
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1616,8 +1638,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene0Dialogue, Assembly-CSharp
         m_MethodName: SceneChange3
         m_Mode: 1
         m_Arguments:
@@ -1902,8 +1924,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene0Dialogue, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -2083,6 +2105,8 @@ MonoBehaviour:
   Char1speech: {fileID: 1628722398506394553}
   Char2name: {fileID: 1628722398506394552}
   Char2speech: {fileID: 1628722398506394551}
+  Char3name: {fileID: 42970697}
+  Char3speech: {fileID: 291562691}
   DialogueDisplay: {fileID: 1628722398506394550}
   ArtChar1: {fileID: 2081576534}
   ArtBG1: {fileID: 1950083101}
@@ -2177,8 +2201,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene0Dialogue, Assembly-CSharp
         m_MethodName: SceneChange2
         m_Mode: 1
         m_Arguments:
