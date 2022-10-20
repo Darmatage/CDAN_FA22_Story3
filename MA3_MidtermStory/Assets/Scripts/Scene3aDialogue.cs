@@ -17,6 +17,7 @@ public class Scene3aDialogue : MonoBehaviour {
         public GameObject ArtChar1;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -30,6 +31,7 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -59,49 +61,54 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
-                Char3speech.text = "You stay strong in the face of Rhubarb and don’t pet him.";
+                Char3speech.text = "You arrive back at the main tent.";
         }
        else if (primeInt ==3){
-                Char1name.text = "YOU";
-                Char1speech.text = "Is there anything you can tell me about what happened here?";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
-                Char3speech.text = "";
+                Char3speech.text = "Unlike the last time you were here; the circus is dead silent.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
+                Char1name.text = "YOU";
+                Char1speech.text = "Um, hello?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
        else if (primeInt == 5){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char1name.text = "YOU";
+                Char1speech.text = "Where did everybody go?";
+                Char2name.text = "";
+                Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "You hear a crunch of leaves behind you.";
         }
        else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "Before you can turn around, something hits you in the back of the head and you black out.";
         }
        else if (primeInt == 8){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
+                ArtBG1.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -113,24 +120,25 @@ public void talking(){         // main story function. Players hit next to progr
                 //Choice1b.SetActive(true); // function Choice1bFunct()
         }
 // ENCOUNTER AFTER CHOICE #1
-       else if (primeInt == 100){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Then you are no use to me, and must be silenced.";
+       else if (primeInt == 9){
+                ArtBG2.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 101){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Come back here! Do not think you can hide from me!";
+       else if (primeInt == 10){
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
+                //nextButton.SetActive(false);
+                //allowSpace = false;
+                //NextScene1Button.SetActive(true);
         }
 
        else if (primeInt == 200){
