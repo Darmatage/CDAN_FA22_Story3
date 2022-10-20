@@ -425,7 +425,47 @@ public void talking(){         // main story function. Players hit next to progr
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
+                  Char3speech.text = "You stay strong in the face of Rhubarb and don’t pet him.";
+         }
+         else if (primeInt == 301){
+                  Char1name.text = "YOU";
+                  Char1speech.text = "Is there anything you can tell me about what happened here?";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+                  Char3name.text = "";
                   Char3speech.text = "";
+         }
+         else if (primeInt == 302){
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+                  Char3name.text = "";
+                  Char3speech.text = "Unhappy with your lack of compliance, Rhubarb gets up.";
+         }
+         else if (primeInt == 303){
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "Rhubarb";
+                  Char2speech.text = "Stupid human, I’m a tiger. What answer do you expect from me?";
+                  Char3name.text = "";
+                  Char3speech.text = "";
+         }
+         else if (primeInt == 304){
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+                  Char3name.text = "";
+                  Char3speech.text = "With that he stalks off, growling, before you are able to shake off the stupor of hearing the tiger speak.";
+         }
+         else if (primeInt == 305){
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "";
+                  Char2speech.text = "";
+                  Char3name.text = "";
+                  Char3speech.text = "You decide to go back to the first tent.";
                   nextButton.SetActive(false);
                   allowSpace = false;
                   NextScene1Button.SetActive(true);
