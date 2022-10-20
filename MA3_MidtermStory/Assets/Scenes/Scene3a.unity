@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &267154727
 RectTransform:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 600cb33ebf2bafa4a8b74a473f8d5f40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7a9d3039974a464fb9a7e936a9b14f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -524,7 +524,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1995835027}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -797,8 +797,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -1331,8 +1331,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
@@ -1781,7 +1781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1896826431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 600cb33ebf2bafa4a8b74a473f8d5f40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 55deb8c85100b82408522b4fd43eba4b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2000,8 +2000,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -2144,8 +2144,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1950083102}
-  - {fileID: 2081576535}
   - {fileID: 706753023}
+  - {fileID: 2081576535}
   - {fileID: 267154727}
   - {fileID: 1896826431}
   - {fileID: 1628722398506394549}
@@ -2185,7 +2185,9 @@ MonoBehaviour:
   Char3name: {fileID: 1569515194}
   Char3speech: {fileID: 1569515193}
   DialogueDisplay: {fileID: 1628722398506394550}
-  ArtChar1: {fileID: 2081576534}
+  ArtChar1a: {fileID: 0}
+  ArtChar1b: {fileID: 0}
+  ArtChar1c: {fileID: 0}
   ArtBG1: {fileID: 1950083101}
   ArtBG2: {fileID: 706753022}
   Choice1a: {fileID: 366835721}
@@ -2277,8 +2279,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: SceneChange2
         m_Mode: 1
         m_Arguments:
@@ -2358,7 +2360,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1995835027}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2385,7 +2387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 600cb33ebf2bafa4a8b74a473f8d5f40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86c647f2cdc4b5640a363a89791deca5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
