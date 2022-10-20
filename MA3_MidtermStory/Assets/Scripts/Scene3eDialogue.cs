@@ -11,11 +11,11 @@ public class Scene3eDialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+        public Text Char3name;
+        public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
-       //public GameObject ArtChar2;
+        public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
