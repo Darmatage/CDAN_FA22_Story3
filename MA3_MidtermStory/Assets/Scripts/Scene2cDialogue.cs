@@ -78,7 +78,13 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
-        }
+		// Turn off "Next" button, turn on "Choice" buttons
+                nextButton.SetActive(false);
+                allowSpace = false;
+                Choice1a.SetActive(true); // function Choice1aFunct()
+                Choice1b.SetActive(true); // function Choice1bFunct()
+	   }
+	   
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -301,19 +307,123 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Then you are no use to me, and must be silenced.";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You spin and look away from the barrel";
         }
-       else if (primeInt == 101){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Come back here! Do not think you can hide from me!";
+		else if (primeInt == 101){
+                Char1name.text = "Maggie";
+                Char1speech.text = "What do you mean? Are you going to help me out?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		else if (primeInt == 102){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You lean toward the barrel a bit but wince at the smell coming from the barrel.";
+        }
+		else if (primeInt == 103){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Player";
+                Char2speech.text = "Are you kidding? You smell like a rotting corpse!";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		else if (primeInt == 104){
+                Char1name.text = "Maggie";
+                Char1speech.text = "Well that's because I am one DUH!";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		else if (primeInt == 105){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "It seems you have offended her and she begins shaking the barrel she is stuck in";
+        }
+		else if (primeInt == 106){
+                Char1name.text = "Maggie";
+                Char1speech.text = "Wow some people these days! You see a kind sweet young girl stuck in a barrel, which was completely not her fault, and don't even bother to help her! ";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		else if (primeInt == 107){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "She begins ranting so furiously that you can't seem to get a word in.";
+        }
+		else if (primeInt == 108){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Player";
+                Char2speech.text = "Well anyways, I have some questions-";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		
+		else if (primeInt == 109){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You're cut off by a disembodied arm whacking you in the head";
+        }
+		
+		else if (primeInt == 110){
+                Char1name.text = "Maggie";
+                Char1speech.text = "You think I'll answer a question after you won't even help me! Pfft as if!";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		
+		else if (primeInt == 111){
+                Char1name.text = "Maggie";
+                Char1speech.text = "I CAN GET OUT ALL BY MYSELF!";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		
+		else if (primeInt == 112){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You look down at the ground where the arm fell but by the time you pick it up to return it to the girl she has tipped the barrel over and rolled off into the circus.";
+        }
+       else if (primeInt == 113){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Player";
+                Char2speech.text = "Well that was weird.";
+				Char3name.text = "";
+				Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
+                NextScene2Button.SetActive(true);
         }
 
        else if (primeInt == 200){
@@ -337,8 +447,10 @@ public void talking(){         // main story function. Players hit next to progr
         public void Choice1aFunct(){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "I don't know what you're talking about!";
+                Char2name.text = "Player";
+                Char2speech.text = "Oh, hell no.";
+				Char3name.text = "";
+				Char3speech.text = "";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -358,9 +470,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene0");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene0");
         }
 }

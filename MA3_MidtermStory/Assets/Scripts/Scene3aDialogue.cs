@@ -11,8 +11,8 @@ public class Scene3aDialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+       public Text Char3name;
+       public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
        //public GameObject ArtChar2;
@@ -54,16 +54,20 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
                ArtChar1.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "Jeda";
-                Char1speech.text = "Wakey wakey, human.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wuh..? What happened?";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "You stay strong in the face of Rhubarb and don’t pet him.";
+        }
+       else if (primeInt ==3){
+                Char1name.text = "YOU";
+                Char1speech.text = "Is there anything you can tell me about what happened here?";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
@@ -71,12 +75,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "I know I did not hit you that hard.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Hit me? Why?";
+                Char3name.text = "";
+                Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
@@ -96,11 +104,13 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Do not play the stupid. You will take me to him.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                //nextButton.SetActive(false);
+                //allowSpace = false;
+                //Choice1a.SetActive(true); // function Choice1aFunct()
+                //Choice1b.SetActive(true); // function Choice1bFunct()
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
@@ -108,12 +118,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Then you are no use to me, and must be silenced.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
         }
        else if (primeInt == 101){
                 Char1name.text = "Jeda";
                 Char1speech.text = "Come back here! Do not think you can hide from me!";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
