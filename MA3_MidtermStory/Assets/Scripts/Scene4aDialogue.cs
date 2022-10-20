@@ -11,8 +11,8 @@ public class Scene4aDialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+        public Text Char3name;
+        public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
        //public GameObject ArtChar2;
@@ -56,47 +56,101 @@ public void talking(){         // main story function. Players hit next to progr
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You look down at the whip and back at the ringmaster. You think to yourself that you can't win another fight at this rate. With your remaining breath, you sprint out of the tent.";
-        }
-       else if (primeInt ==3){
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+				Char3speech.text = "You look down at the whip and back at the ringmaster.";
+		}
+		else if (primeInt == 3){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+				Char3speech.text = "You think to yourself that you can't win another fight at this rate.";
+		}
+		else if (primeInt == 4){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+				Char3speech.text = "With your remaining breath, you sprint out of the tent.";
+		}
+       else if (primeInt ==5){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "I think I lost them, lemme hide behind this booth to catch my breath.";
-                //gameHandler.AddPlayerStat(1);
+                Char3name.text = "";
+				Char3speech.text = "";
+				//gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 4){
+       else if (primeInt == 6){
                 Char1name.text = "Ringmaster";
                 Char1speech.text = "Oh, how foolish can you be, outsider?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
         }
-       else if (primeInt == 5){
+       else if (primeInt == 7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "Before you even get a breath, the Ringmaster is looming over you from the other side of the booth. They crack their whip around your neck once again and yank you up to eye level.";
-                //gameHandler.AddPlayerStat(1);
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+				Char3speech.text = "Before you even get a breath, the Ringmaster is looming over you from the other side of the booth.";
+				//gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 6){
+		else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "They crack their whip around your neck once again and yank you up to eye level.";
+        }
+       else if (primeInt == 9){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "Let go of me, you freak!";
+				Char3name.text = "";
+				Char3speech.text = "";
         }
-       else if (primeInt ==7){
+       else if (primeInt ==10){
                 Char1name.text = "Ringmaster";
-                Char1speech.text = "Awe, how rude. I'm no freak, but you wouldn't know that because we haven't even properly gotten to know each other. Well, not yet…";
+                Char1speech.text = "Awe, how rude.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
         }
-       else if (primeInt == 8){
+		      else if (primeInt ==11){
+                Char1name.text = "Ringmaster";
+                Char1speech.text = "I'm no freak, but you wouldn't know that because we haven't even properly gotten to know each other.";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		else if (primeInt ==12){
+                Char1name.text = "Ringmaster";
+                Char1speech.text = "Well, not yet…";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+       else if (primeInt == 13){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "Your vision goes dark as you lose consciousness.";
-                // Turn off "Next" button, turn on "Choice" buttons
+                Char2name.text = "";
+                Char2speech.text = ".";
+                Char3name.text = "";
+				Char3speech.text = "Your vision goes dark as you lose consciousness";
+				// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()

@@ -1800,7 +1800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 08085db7dcba96c4097a83a694c25a95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c161e4dc08ba30c4da5b78c1a984cc2f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2083,6 +2083,8 @@ MonoBehaviour:
   Char1speech: {fileID: 1628722398506394553}
   Char2name: {fileID: 1628722398506394552}
   Char2speech: {fileID: 1628722398506394551}
+  Char3name: {fileID: 0}
+  Char3speech: {fileID: 0}
   DialogueDisplay: {fileID: 1628722398506394550}
   ArtChar1: {fileID: 2081576534}
   ArtBG1: {fileID: 1950083101}
