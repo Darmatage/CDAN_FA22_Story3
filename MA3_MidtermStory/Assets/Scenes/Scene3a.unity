@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &267154727
 RectTransform:
   m_ObjectHideFlags: 0
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -524,7 +524,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1995835027}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -797,8 +797,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -1331,8 +1331,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
@@ -1781,7 +1781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1896826431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2000,8 +2000,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -2144,8 +2144,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1950083102}
-  - {fileID: 2081576535}
   - {fileID: 706753023}
+  - {fileID: 2081576535}
   - {fileID: 267154727}
   - {fileID: 1896826431}
   - {fileID: 1628722398506394549}
@@ -2277,8 +2277,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 1995835028}
+        m_TargetAssemblyTypeName: Scene3aDialogue, Assembly-CSharp
         m_MethodName: SceneChange2
         m_Mode: 1
         m_Arguments:
@@ -2358,7 +2358,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1995835027}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
