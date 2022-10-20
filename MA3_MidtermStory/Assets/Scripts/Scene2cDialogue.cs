@@ -69,7 +69,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text= "";
                 Char3speech.text = "As you lift the top you see a small decomposing girl staring at you.";
 		}
-		
+
        else if (primeInt ==4){
                 Char1name.text = "Maggie";
                 Char1speech.text = "Oh, thank goodness someone heard me! I've been stuck in this barrel for god knows how long!";
@@ -79,7 +79,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 4){
+       else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -87,7 +87,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3name.text = "";
 				Char3speech.text = "You jump backward, shocked that a literal dead body is speaking to you.";
 		}
-       else if (primeInt == 5){
+       else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -95,7 +95,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3name.text = "";
 				Char3speech.text = "";
         }
-       else if (primeInt == 6){
+       else if (primeInt == 7){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -103,7 +103,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3name.text = "";
 				Char3speech.text = "Maggie looks at you confused and begins to shake the barrel.";
 		}
-       else if (primeInt ==7){
+       else if (primeInt ==8){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I don't know what you're talking about but now that you're here, get me out of this darn barrel! It's stuffy and uncomfortable!";
                 Char2name.text = "";
@@ -111,7 +111,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==8){
+       else if (primeInt ==9){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -119,7 +119,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "You decide to help her see if she might give you some more information on the circus.";
 		}
-       else if (primeInt ==9){
+       else if (primeInt ==10){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -127,7 +127,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==10){
+       else if (primeInt ==11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -135,7 +135,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "You start digging around in the barrel to try and grab the girl to lift her out.";
 		}
-       else if (primeInt ==11){
+       else if (primeInt ==12){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -143,7 +143,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==12){
+       else if (primeInt ==13){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -151,7 +151,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "You lift up what you think will be the little girl but is, in fact, just her arm separate from her body.";
 		}
-       else if (primeInt ==13){
+       else if (primeInt ==14){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -159,7 +159,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==14){
+       else if (primeInt ==15){
                 Char1name.text = "Maggie";
                 Char1speech.text = "HEY! That's Maggies give it back!";
                 Char2name.text = "";
@@ -167,7 +167,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==15){
+       else if (primeInt ==16){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -175,7 +175,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==16){
+       else if (primeInt ==17){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -183,7 +183,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "You toss the arm back in the barrel.";
 		}
-       else if (primeInt ==17){
+       else if (primeInt ==18){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -191,7 +191,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==18){
+       else if (primeInt ==19){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I am you dimwit!";
                 Char2name.text = "";
@@ -199,7 +199,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==19){
+       else if (primeInt ==20){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -207,7 +207,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "She says as she uses her separated arm to climb out of the barrel.";
 		}
-       else if (primeInt ==20){
+       else if (primeInt ==21){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I should still thank you for helping me, even though I did most of the work.";
                 Char2name.text = "";
@@ -215,7 +215,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==21){
+       else if (primeInt ==22){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -223,7 +223,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "She gives you a cheeky grin.";
 		}
-       else if (primeInt ==22){
+       else if (primeInt ==23){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -231,7 +231,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==23){
+       else if (primeInt ==24){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -239,7 +239,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "She looks at you confused";
 		}
-       else if (primeInt ==24){
+       else if (primeInt ==25){
                 Char1name.text = "Maggie";
                 Char1speech.text = "What's there to know? It's a circus, and people come here to have fun!";
                 Char2name.text = "";
@@ -247,7 +247,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==25){
+       else if (primeInt ==26){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -255,7 +255,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==26){
+       else if (primeInt ==27){
                 Char1name.text = "Maggie";
                 Char1speech.text = "Abandoned? What are you talking about, we were just performing yesterday. Huge crowds, tons of people, the works, ya know?";
                 Char2name.text = "";
@@ -263,7 +263,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==27){
+       else if (primeInt ==28){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -271,7 +271,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "You look at her closely and finally realize that she really is a corpse, no props, no makeup, just rotting flesh.";
 		}
-       else if (primeInt ==28){
+       else if (primeInt ==29){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
@@ -279,7 +279,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
 		}
-       else if (primeInt ==29){
+       else if (primeInt ==30){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -287,7 +287,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "You slowly start backing away.";
         }
-       else if (primeInt == 30){
+       else if (primeInt == 31){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I can point you in the direction of some of my other friends who also perform here, they're hilarious!";
                 Char2name.text = "";
