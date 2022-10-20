@@ -31,6 +31,7 @@ public class Scene2bDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
+		private string thisScene; 
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -48,6 +49,9 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+		
+		thisScene = SceneManager.GetActiveScene().name;
+		GameHandler.lastScene = thisScene;
    }
 
 void Update(){         // use spacebar as Next button
@@ -75,6 +79,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "You decide to follow the tall woman, jogging a little to reach the more distant area.";
+				
+				GameHandler.sawHotLady=true;
         }
        else if (primeInt == 3){
                 Char1name.text = "";

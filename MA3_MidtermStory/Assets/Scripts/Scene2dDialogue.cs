@@ -33,6 +33,7 @@ public class Scene2dDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
+		private string thisScene; 
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -50,6 +51,9 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+		
+		thisScene = SceneManager.GetActiveScene().name;
+		GameHandler.lastScene = thisScene;
    }
 
 void Update(){         // use spacebar as Next button
@@ -74,6 +78,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
                 Char3speech.text = "You stare back at the rabbit. It runs off and you follow it.";
+				
+				GameHandler.sawRabbit=true;
         }
        else if (primeInt ==3){
                ArtChar1a.SetActive(true);

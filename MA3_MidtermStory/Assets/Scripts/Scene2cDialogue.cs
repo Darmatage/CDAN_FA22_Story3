@@ -25,6 +25,7 @@ public class Scene2cDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
+		private string thisScene; 
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -35,6 +36,9 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+		
+		thisScene = SceneManager.GetActiveScene().name;
+		GameHandler.lastScene = thisScene;
    }
 
 void Update(){         // use spacebar as Next button
@@ -60,8 +64,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text= "";
                 Char3speech.text = "You decide to investigate the barrel to see what noises are coming from it.";
+				GameHandler.sawBarrel=true;
+	
         }
-		        else if (primeInt == 3){
+		else if (primeInt == 3){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -663,6 +669,8 @@ else if (primeInt == 200){
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+				
+				GameHandler.helpedZombie=true;
         }
 		
 

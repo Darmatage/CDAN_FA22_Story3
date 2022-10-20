@@ -7,7 +7,14 @@ using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour {
 
-	public static int playerStat;
+	public static string lastScene = "";
+	public static bool sawTent;
+	public static bool sawHotLady;
+	public static bool sawBarrel;
+	public static bool sawRabbit;	
+	public static bool helpedZombie;
+	
+	
 	public static bool GameisPaused = false;
 	public GameObject pauseMenuUI;
 	public AudioMixer mixer;
@@ -57,13 +64,13 @@ public class GameHandler : MonoBehaviour {
 	}
 
 	public void UpdatePlayerStat(int amount){
-		playerStat += amount;
-		Debug.Log("Current Player Stat = " + playerStat);
+		//playerStat += amount;
+		//Debug.Log("Current Player Stat = " + playerStat);
 	}
 
-	public int CheckPlayerStat(){
-		return playerStat;
-	}
+	//public int CheckPlayerStat(){
+		//return playerStat;
+	//}
 
 	public void StartGame(){
 		SceneManager.LoadScene("Scene1");
