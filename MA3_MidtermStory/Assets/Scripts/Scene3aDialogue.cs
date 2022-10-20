@@ -14,7 +14,9 @@ public class Scene3aDialogue : MonoBehaviour {
        public Text Char3name;
        public Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ArtChar1;
+        public GameObject ArtChar1a;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject ArtBG2;
@@ -29,7 +31,9 @@ public class Scene3aDialogue : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
-        ArtChar1.SetActive(false);
+        ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
         ArtBG1.SetActive(true);
         ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
@@ -54,7 +58,7 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(false);
+               ArtChar1a.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -130,7 +134,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "You open your eyes and see a blood soaked array.";
         }
        else if (primeInt == 10){
-                ArtChar1.SetActive(true);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ringmaster";
@@ -190,6 +194,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Choice1b.SetActive(true); // function Choice1bFunct()
         }
         else if (primeInt == 100){
+                 ArtChar1a.SetActive(false);
+                 ArtChar1b.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -206,6 +212,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 102){
+          ArtChar1b.SetActive(false);
+          ArtChar1a.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -215,6 +223,8 @@ public void talking(){         // main story function. Players hit next to progr
                  primeInt = 299;
         }
         else if (primeInt == 200){
+          ArtChar1a.SetActive(false);
+          ArtChar1c.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -239,6 +249,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 203){
+          ArtChar1c.SetActive(false);
+          ArtChar1a.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -255,6 +267,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 205){
+          ArtChar1a.SetActive(false);
+          ArtChar1c.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -263,14 +277,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 206){
-                 Char1name.text = "";
-                 Char1speech.text = "";
-                 Char2name.text = "Ringmaster";
-                 Char2speech.text = "Wow you humans are really dumb.";
-                 Char3name.text = "";
-                 Char3speech.text = "";
-        }
-        else if (primeInt == 207){
+          ArtChar1c.SetActive(false);
+          ArtChar1a.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -278,7 +286,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 208){
+        else if (primeInt == 207){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -286,7 +294,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 209){
+        else if (primeInt == 208){
                  Char1name.text = "YOU";
                  Char1speech.text = "You won't get away with this!";
                  Char2name.text = "";
@@ -294,7 +302,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 210){
+        else if (primeInt == 209){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -302,7 +312,10 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 211){
+        else if (primeInt == 210){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(true);
+          ArtChar1b.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -310,7 +323,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 212){
+        else if (primeInt == 211){
+          ArtChar1b.SetActive(false);
+          ArtChar1a.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -318,7 +333,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 213){
+        else if (primeInt == 212){
+          ArtChar1a.SetActive(false);
+          ArtChar1c.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -326,7 +343,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 214){
+        else if (primeInt == 213){
+          ArtChar1c.SetActive(false);
+          ArtChar1b.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -334,7 +353,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "The Ringmaster gets distracted and starts petting and baby talking Rhubarb.";
         }
-        else if (primeInt == 215){
+        else if (primeInt == 214){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -342,7 +361,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 216){
+        else if (primeInt == 215){
+          ArtChar1c.SetActive(false);
+          ArtChar1a.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -350,7 +371,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 217){
+        else if (primeInt == 216){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -358,7 +379,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "Rhubarb approaches you.";
         }
-        else if (primeInt == 218){
+        else if (primeInt == 217){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -366,7 +387,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 219){
+        else if (primeInt == 218){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
@@ -374,7 +395,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3name.text = "";
                  Char3speech.text = "";
         }
-        else if (primeInt == 220){
+        else if (primeInt == 219){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
