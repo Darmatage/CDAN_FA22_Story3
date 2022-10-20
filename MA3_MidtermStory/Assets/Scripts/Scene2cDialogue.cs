@@ -11,8 +11,8 @@ public class Scene2cDialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
+        public Text Char3name;
+        public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
        //public GameObject ArtChar2;
@@ -56,205 +56,248 @@ public void talking(){         // main story function. Players hit next to progr
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You decide to investigate the barrel to see what noises are coming from it. As you lift the top you see a small decomposing girl staring at you.";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text= "";
+                Char3speech.text = "You decide to investigate the barrel to see what noises are coming from it.";
         }
-       else if (primeInt ==3){
+		        else if (primeInt == 3){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text= "";
+                Char3speech.text = "As you lift the top you see a small decomposing girl staring at you.";
+		}
+		
+       else if (primeInt ==4){
                 Char1name.text = "Maggie";
                 Char1speech.text = "Oh, thank goodness someone heard me! I've been stuck in this barrel for god knows how long!";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You jump backward, shocked that a literal dead body is speaking to you.";
-        }
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+				Char3speech.text = "You jump backward, shocked that a literal dead body is speaking to you.";
+		}
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "Ummm.. so, like, that's just makeup, right?";
-                //gameHandler.AddPlayerStat(1);
+                Char3name.text = "";
+				Char3speech.text = "";
         }
        else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "Maggie looks at you confused and begins to shake the barrel.";
-        }
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+				Char3speech.text = "Maggie looks at you confused and begins to shake the barrel.";
+		}
        else if (primeInt ==7){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I don't know what you're talking about but now that you're here, get me out of this darn barrel! It's stuffy and uncomfortable!";
                 Char2name.text = "";
                 Char2speech.text = "";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==8){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You decide to help her see if she might give you some more information on the circus.";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You decide to help her see if she might give you some more information on the circus.";
 		}
        else if (primeInt ==9){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "Yeah! No problem lemme just…. Hmmm... You're really stuck in there?";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==10){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You start digging around in the barrel to try and grab the girl to lift her out.";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You start digging around in the barrel to try and grab the girl to lift her out.";
 		}
        else if (primeInt ==11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "OH! I think I've got you here just a second and….. Here we go!";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==12){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You lift up what you think will be the little girl but is, in fact, just her arm separate from her body.";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You lift up what you think will be the little girl but is, in fact, just her arm separate from her body.";
 		}
        else if (primeInt ==13){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "OH JESUS CHRIST!";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==14){
                 Char1name.text = "Maggie";
                 Char1speech.text = "HEY! That's Maggies give it back!";
                 Char2name.text = "";
                 Char2speech.text = "";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==15){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "AH! Here!";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==16){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You toss the arm back in the barrel.";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You toss the arm back in the barrel.";
 		}
        else if (primeInt ==17){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "Who’s Maggie?";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==18){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I am you dimwit!";
                 Char2name.text = "";
                 Char2speech.text = "";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==19){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "She says as she uses her separated arm to climb out of the barrel. She is now out of the barrel.";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "She says as she uses her separated arm to climb out of the barrel.";
 		}
        else if (primeInt ==20){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I should still thank you for helping me, even though I did most of the work.";
                 Char2name.text = "";
                 Char2speech.text = "";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==21){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "She gives you a cheeky grin.";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "She gives you a cheeky grin.";
 		}
        else if (primeInt ==22){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "I was actually wondering if you knew anything about this circus.";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==23){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "She looks at you confused";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "She looks at you confused";
 		}
        else if (primeInt ==24){
                 Char1name.text = "Maggie";
                 Char1speech.text = "What's there to know? It's a circus, and people come here to have fun!";
                 Char2name.text = "";
                 Char2speech.text = "";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==25){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "Yeah, I got that part, but like, why are people here I thought it was supposed to be abandoned.";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==26){
                 Char1name.text = "Maggie";
                 Char1speech.text = "Abandoned? What are you talking about, we were just performing yesterday. Huge crowds, tons of people, the works, ya know?";
                 Char2name.text = "";
                 Char2speech.text = "";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==27){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You look at her closely and finally realize that she really is a corpse, no props, no makeup, just rotting flesh.";
-				
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You look at her closely and finally realize that she really is a corpse, no props, no makeup, just rotting flesh.";
 		}
        else if (primeInt ==28){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Player";
                 Char2speech.text = "O-okay, sure.";
-				
+				Char3name.text = "";
+				Char3speech.text = "";
 		}
        else if (primeInt ==29){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Narration";
-                Char2speech.text = "You slowly start backing away.";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "You slowly start backing away.";
         }
        else if (primeInt == 30){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I can point you in the direction of some of my other friends who also perform here, they're hilarious!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                // Turn off "Next" button, turn on "Choice" buttons
+				Char3name.text = "";
+				Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                NextScene1Button.SetActive(true);
+                NextScene2Button.SetActive(true);
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
