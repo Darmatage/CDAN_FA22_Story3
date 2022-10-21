@@ -31,7 +31,7 @@ public class Scene2bDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
-		private string thisScene; 
+		private string thisScene;
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -49,7 +49,7 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-		
+
 		thisScene = SceneManager.GetActiveScene().name;
 		GameHandler.lastScene = thisScene;
    }
@@ -79,7 +79,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "You decide to follow the tall woman, jogging a little to reach the more distant area.";
-				
+
 				GameHandler.sawHotLady=true;
         }
        else if (primeInt == 3){
@@ -208,6 +208,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 17){
+          ArtChar1a.SetActive(true);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -224,8 +227,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "You’re caught off guard by the unexpected but luscious beard covering the lower half of her face.";
         }
         else if (primeInt == 19){
-          ArtChar1a.SetActive(true);
-          ArtChar1b.SetActive(false);
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(true);
           ArtChar1c.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
@@ -235,8 +238,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 20){
-          ArtChar1a.SetActive(false);
-          ArtChar1b.SetActive(true);
+          ArtChar1a.SetActive(true);
+          ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
@@ -287,9 +290,6 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 25){
-          ArtChar1a.SetActive(false);
-          ArtChar1b.SetActive(false);
-          ArtChar1c.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -298,6 +298,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "She’s teasing you, and you crack a nervous laugh.";
         }
         else if (primeInt == 26){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
                  Char1name.text = "YOU";
                  Char1speech.text = "No, just, uh…";
                  Char2name.text = "";
@@ -455,7 +458,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
          else if (primeInt == 105){
-           ArtChar1a.SetActive(false);
+           ArtChar1a.SetActive(true);
            ArtChar1b.SetActive(false);
            ArtChar1d.SetActive(false);
                   Char1name.text = "";
@@ -474,6 +477,9 @@ public void talking(){         // main story function. Players hit next to progr
                    Char3speech.text = "You sigh, and wave your hand dismissively.";
         }
            else if (primeInt == 107){
+             ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1d.SetActive(false);
                     Char1name.text = "YOU";
                     Char1speech.text = "…nevermind.";
                     Char2name.text = "";
@@ -557,7 +563,7 @@ public void talking(){         // main story function. Players hit next to progr
                       Char3speech.text = "";
         }
               else if (primeInt == 207){
-                ArtChar1a.SetActive(false);
+                ArtChar1a.SetActive(true);
                 ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
                        Char1name.text = "";
@@ -608,12 +614,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
         }
         else if (primeInt == 302){
-          ArtChar1a.SetActive(false);
-          ArtChar1b.SetActive(false);
-          ArtChar1c.SetActive(false);
-          ArtChar1d.SetActive(false);
-          ArtChar1e.SetActive(false);
-          ArtChar1f.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -684,7 +684,7 @@ public void talking(){         // main story function. Players hit next to progr
           ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
-          ArtChar1e.SetActive(false);
+          ArtChar1e.SetActive(true);
           ArtChar1f.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
@@ -694,12 +694,6 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "Her gaze saddens, as she looks to her lap.";
         }
         else if (primeInt == 309){
-          ArtChar1a.SetActive(false);
-          ArtChar1b.SetActive(false);
-          ArtChar1c.SetActive(false);
-          ArtChar1d.SetActive(false);
-          ArtChar1e.SetActive(true);
-          ArtChar1f.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Beatrice";
@@ -716,7 +710,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 311){
-          ArtChar1a.SetActive(false);
+          ArtChar1a.SetActive(true);
           ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
@@ -786,6 +780,12 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 316){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
+          ArtChar1d.SetActive(false);
+          ArtChar1e.SetActive(true);
+          ArtChar1f.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -794,6 +794,12 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "Beatrice is silent, for a long while. ";
         }
         else if (primeInt == 317){
+          ArtChar1a.SetActive(true);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
+          ArtChar1d.SetActive(false);
+          ArtChar1e.SetActive(false);
+          ArtChar1f.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -802,12 +808,6 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "Finally, after a few minutes, she raises her head and stares at you.";
         }
         else if (primeInt == 318){
-          ArtChar1a.SetActive(true);
-          ArtChar1b.SetActive(false);
-          ArtChar1c.SetActive(false);
-          ArtChar1d.SetActive(false);
-          ArtChar1e.SetActive(false);
-          ArtChar1f.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Beatrice";
@@ -830,7 +830,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 320){
-          ArtChar1a.SetActive(false);
+          ArtChar1a.SetActive(true);
           ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
@@ -844,8 +844,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "She looks around the dressing room, before standing.";
         }
         else if (primeInt == 321){
-          ArtChar1a.SetActive(true);
-          ArtChar1b.SetActive(false);
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(true);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
           ArtChar1e.SetActive(false);

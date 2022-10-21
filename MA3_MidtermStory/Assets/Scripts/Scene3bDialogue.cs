@@ -55,7 +55,7 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-          ArtChar1a.SetActive(false);
+          ArtChar1a.SetActive(true);
           ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
@@ -85,6 +85,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "You’ve completely forgotten about the task at hand, but what does that matter?";
         }
        else if (primeInt == 5){
+         ArtChar1a.SetActive(false);
+         ArtChar1b.SetActive(false);
+         ArtChar1c.SetActive(false);
+         ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "You know, maybe you could humor me for just a while.";
                 Char2name.text = "";
@@ -210,6 +214,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "Then you move closer to her, taking her hands in yours.";
         }
         else if (primeInt == 16){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
+          ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Why don’t we run away together, Beatrice? ";
                 Char2name.text = "";
@@ -279,6 +287,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
         }
        else if (primeInt == 101){
+         ArtChar1a.SetActive(false);
+         ArtChar1b.SetActive(false);
+         ArtChar1c.SetActive(false);
+         ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Aw hell yeah.";
                 Char2name.text = "";
@@ -293,7 +305,7 @@ public void talking(){         // main story function. Players hit next to progr
 // ENCOUNTER AFTER CHOICE #1B
 
        else if (primeInt == 200){
-         ArtChar1a.SetActive(false);
+         ArtChar1a.SetActive(true);
          ArtChar1b.SetActive(false);
          ArtChar1c.SetActive(false);
          ArtChar1d.SetActive(false);
@@ -305,6 +317,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "That was terrible.";
         }
         else if (primeInt == 201){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
+          ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Are you Australian?";
                 Char2name.text = "";
@@ -313,8 +329,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
          }
         else if (primeInt == 202){
-          ArtChar1a.SetActive(true);
-          ArtChar1b.SetActive(false);
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(true);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
                 Char1name.text = "";
@@ -328,7 +344,7 @@ public void talking(){         // main story function. Players hit next to progr
           ArtChar1a.SetActive(false);
           ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
-          ArtChar1d.SetActive(true);
+          ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Because you meet all of my koalafications.";
                 Char2name.text = "";
@@ -337,6 +353,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
         }
         else if (primeInt == 204){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
+          ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -346,7 +366,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 205){
           ArtChar1a.SetActive(false);
-          ArtChar1b.SetActive(true);
+          ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
@@ -359,7 +379,7 @@ public void talking(){         // main story function. Players hit next to progr
        else if (primeInt == 206){
          ArtChar1a.SetActive(false);
          ArtChar1b.SetActive(false);
-         ArtChar1c.SetActive(true);
+         ArtChar1c.SetActive(false);
          ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "…I’d put U and I together.";
@@ -388,6 +408,10 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(false);
+          ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
