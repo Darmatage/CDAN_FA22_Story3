@@ -66,14 +66,14 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               
+
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-                Char3speech.text = "After a few hours of surfing the internet, \n you come across a strange site.";
+                Char3speech.text = "After a few hours of surfing the internet, \nyou come across a strange site.";
 				Char4name.text = "";
                 Char4speech.text = "";
         }
@@ -104,7 +104,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
-                Char1speech.text = "I’m surprised it still looks this good after a hundred years or so.";
+                Char1speech.text = "Wow...being neglected for a century really took its toll on this place.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -133,7 +133,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-                Char3speech.text = "A dilapidated tent stands in the distance, \n barely held up by the ropes gripping it to the ground.";
+                Char3speech.text = "A dilapidated tent stands in the distance, \nbarely held up by the ropes latching it to the ground.";
         }
        else if (primeInt == 10){
                 Char1name.text = "";
@@ -176,7 +176,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
                 Char3speech.text = "They flash a big smile, taking your hand in one of theirs and shaking it – too much.";
-        }		
+        }
 
        else if (primeInt == 15){
                 Char1name.text = "YOU";
@@ -199,9 +199,9 @@ public void talking(){         // main story function. Players hit next to progr
                 Choice1a.SetActive(true); // function Choice1aFunct(): Who are you?
                 Choice1b.SetActive(true); // function Choice1bFunct(): Are you cosplaying or something?
         }
-		
+
 // CONVERGENCE AFTER CHOICES #1
-    	
+
         else if (primeInt == 25){
 			ArtChar1a.SetActive(false);
 			ArtChar1b.SetActive(false);
@@ -211,7 +211,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2name.text = "";
                  Char2speech.text = "";
 				 Char3name.text = "";
-                Char3speech.text = "They seem to ignore that question, instead moving on with that same enthusiasm from before.";
+                Char3speech.text = "They seem to ignore that response, instead moving on with that same enthusiasm from before.";
         }
         else if (primeInt == 26){
                  Char1name.text = "";
@@ -255,7 +255,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char4name.text = "";
                 Char4speech.text = "";
         }
-		
+
 		else if (primeInt == 31){
                  Char1name.text = "";
                  Char1speech.text = "";
@@ -263,17 +263,17 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
 				 Char3name.text = "";
                 Char3speech.text = "";
-				Char4name.text = "Damien";
-                Char4speech.text = "AWOOOOOOOO!!!!!";
+				Char4name.text = "???";
+                Char4speech.text = "AAAAAAAAAAAAH-!";
         }
-		
+
         else if (primeInt == 32){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
                  Char2speech.text = "";
 				 Char3name.text = "";
-                Char3speech.text = "The one-sided conversation is cut short by a…howl?";
+                Char3speech.text = "The one-sided conversation is cut short by a…scream?";
 				Char4name.text = "";
                 Char4speech.text = "";
         }
@@ -323,7 +323,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2name.text = "";
                  Char2speech.text = "";
 				 Char3name.text = "";
-                Char3speech.text = "For a few minutes you do stay put, but after fifteen minutes go by, and then twenty, you decide to stop sitting around.";
+                Char3speech.text = "For a few minutes you do stay put, but after five minutes go by, and then ten, you decide to stop sitting around.";
         }
         else if (primeInt == 39){
                  Char1name.text = "";
@@ -379,9 +379,9 @@ public void talking(){         // main story function. Players hit next to progr
                  NextScene3Button.SetActive(true);
                  NextScene4Button.SetActive(true);
         }
-		
-		
-// ENCOUNTER AFTER CHOICE #1a		
+
+
+// ENCOUNTER AFTER CHOICE #1a
    else if (primeInt == 100){
                 Char1name.text = "YOU";
                 Char1speech.text = "Um...nice to meet you, er–";
@@ -401,10 +401,28 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
                 Char3speech.text = "";
         }
-		
-		else if (primeInt == 102){
+        else if (primeInt == 102){
+                 Char1name.text = "YOU";
+                 Char1speech.text = "...right. What about...your actual name?";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+ 				Char3name.text = "";
+                 Char3speech.text = "";
+         }
+         else if (primeInt == 103){
+            ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(true);
+          ArtChar1c.SetActive(false);
+                  Char1name.text = "";
+                  Char1speech.text = "";
+                  Char2name.text = "Ringmaster";
+                  Char2speech.text = "Haha, I just told you!";
+          Char3name.text = "";
+                  Char3speech.text = "";
+          }
+		else if (primeInt == 104){
                 Char1name.text = "YOU";
-                Char1speech.text = "Uh, is that 'Mr The Ringmaster'...? ";
+                Char1speech.text = "This is a weird, mysterious act you're putting on.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -413,7 +431,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
 
-// ENCOUNTER AFTER CHOICE #1b	
+// ENCOUNTER AFTER CHOICE #1b
        else if (primeInt == 200){
                 Char1name.text = "YOU";
                 Char1speech.text = "So, uh, are you cosplaying or something?";
@@ -430,37 +448,45 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 202){
+        else if (primeInt == 202){
+                 Char1name.text = "";
+                 Char1speech.text = "";
+                 Char2name.text = "";
+                 Char2speech.text = "";
+ 				Char3name.text = "";
+                 Char3speech.text = "The Ringmaster gives you a quizzical look, their only response a slight shrug of their shoulders.";
+         }
+       else if (primeInt == 203){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Ringmaster";
+                Char2speech.text = "‘Cosplaying?’ What a peculiar term.";
 				Char3name.text = "";
-                Char3speech.text = "The Ringmaster gives you a quizzical look, their only response a slight shrug of their shoulders.";
+                Char3speech.text = "";
                 //nextButton.SetActive(false);
                 //allowSpace = false;
                 //NextScene2Button.SetActive(true);
         }
-        else if (primeInt == 203){
+        else if (primeInt == 204){
 			ArtChar1a.SetActive(false);
 			ArtChar1b.SetActive(true);
 			ArtChar1c.SetActive(false);
-                 Char1name.text = "";
-                 Char1speech.text = "";
-                 Char2name.text = "Ringmaster";
-                 Char2speech.text = "‘Cosplaying?’ What a peculiar term.";
+                 Char1name.text = "YOU";
+                 Char1speech.text = "Not really answering my question, you know.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
 				 Char3name.text = "";
                 Char3speech.text = "";
 				primeInt = 24;
-        }		
-		
-		
+        }
+
+
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "YIKES! You surprised me!";
+                Char1speech.text = "Please let go of my hand...thanks.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -473,7 +499,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "That's some outfit you got there!";
+                Char1speech.text = "Nice hat.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
