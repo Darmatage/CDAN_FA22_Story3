@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene4b.unity
     guid: 649158dee5c354141aa9289c64980bd2
+  - enabled: 1
+    path: Assets/Scenes/End_Win2.unity
+    guid: 6e11e6f14f4f74420b18ddc077879291
   m_configObjects: {}
