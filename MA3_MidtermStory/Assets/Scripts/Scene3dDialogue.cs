@@ -73,14 +73,14 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+               ArtChar1b.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
-                Char3speech.text = "You arrive at a demonic array.";
+                Char3speech.text = "You and Karl arrive at a demonic array.";
                 Char4name.text = "";
                 Char4speech.text = "";
         }
@@ -96,6 +96,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 4){
+          ArtChar2e.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -118,6 +119,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "You’re late Karl.";
         }
         else if (primeInt == 6){
+
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -129,6 +131,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 7){
+          ArtChar1b.SetActive(false);
+          ArtChar1d.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -140,6 +144,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 8){
+          ArtChar2e.SetActive(false);
+          ArtChar2a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -151,6 +157,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "Maybe…";
         }
         else if (primeInt == 9){
+          ArtChar1d.SetActive(false);
+          ArtChar1c.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -184,6 +192,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 12){
+          ArtChar2a.SetActive(false);
+          ArtChar2c.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -195,6 +205,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "Who the hell are you?";
         }
         else if (primeInt == 13){
+          ArtChar1c.SetActive(false);
+          ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -206,6 +218,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 14){
+          ArtChar1a.SetActive(false);
+          ArtChar1b.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -217,6 +231,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 15){
+          ArtChar1b.SetActive(false);
+          ArtChar1d.SetActive(true);
+          ArtChar2c.SetActive(false);
+          ArtChar2d.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -239,6 +257,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 17){
+          ArtChar1d.SetActive(false);
+          ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -250,6 +270,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 18){
+          ArtChar1a.SetActive(false);
+          ArtChar1d.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -276,6 +298,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
         else if (primeInt == 21){
+          ArtChar1d.SetActive(false);
+          ArtChar1b.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -320,6 +344,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 25){
+          ArtChar2d.SetActive(false);
+          ArtChar2e.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -362,6 +388,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "Yeah.";
         }
         else if (primeInt == 29){
+          ArtChar2e.SetActive(false);
+          ArtChar2c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -402,6 +430,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
         }
         else if (primeInt == 33){
+          ArtChar2c.SetActive(false);
+          ArtChar2a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -422,6 +452,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "Anyway, me and Karl have reservations. Peace.";
         }
         else if (primeInt == 35){
+          ArtChar2a.SetActive(false);
+          ArtChar1b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
