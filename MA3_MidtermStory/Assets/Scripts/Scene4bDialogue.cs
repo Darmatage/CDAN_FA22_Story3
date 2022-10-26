@@ -40,6 +40,7 @@ public class Scene4bDialogue : MonoBehaviour {
         public GameObject Choice1d;
         public GameObject NextScene1Button;
         public GameObject nextButton;
+        public AudioSource SFXClip1;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -689,6 +690,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char7speech.text = "";
        }
        else if (primeInt ==44){
+         SFXClip1.Play();
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -705,6 +707,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char7speech.text = "-Purr-";
        }
        else if (primeInt ==45){
+         SFXClip1.Stop();
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -829,6 +832,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char7speech.text = "";
        }
        else if (primeInt ==50){
+         SFXClip1.Play();
          ArtChar1a.SetActive(false);
          ArtChar1b.SetActive(false);
          ArtChar1c.SetActive(false);
@@ -856,6 +860,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char7speech.text = "-More purrs-";
        }
        else if (primeInt ==51){
+         SFXClip1.Stop();
          ArtChar1a.SetActive(false);
          ArtChar1b.SetActive(false);
          ArtChar1c.SetActive(false);
