@@ -30,7 +30,7 @@ public class Scene2aDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
-		private string thisScene; 
+		private string thisScene;
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -47,7 +47,7 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-		
+
 		thisScene = SceneManager.GetActiveScene().name;
 		GameHandler.lastScene = thisScene;
    }
@@ -75,10 +75,11 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
                 Char1name.text = "";
                 Char1speech.text = "";
-				
+
 				GameHandler.sawTent=true;
         }
         else if (primeInt == 3){
+                        StartCoroutine(FadeIn(ArtChar1));
                        ArtChar1.SetActive(true);
                         DialogueDisplay.SetActive(true);
                         Char3name.text = "";
@@ -458,6 +459,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "";
          }
          else if (primeInt == 304){
+            StartCoroutine(FadeOut(ArtChar3));
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "";
@@ -466,6 +468,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "With that he stalks off, growling, before you are able to shake off the stupor of hearing the tiger speak.";
          }
          else if (primeInt == 305){
+           ArtChar3.SetActive(false);
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "";
@@ -495,6 +498,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "He starts purring, a loud, horrible sound that reminds you of a stalling car.";
          }
          else if (primeInt == 402){
+           StartCoroutine(FadeOut(ArtChar5));
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "";
@@ -503,6 +507,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "Eventually, he has his fill and wanders off.";
          }
          else if (primeInt == 403){
+           ArtChar5.SetActive(false);
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "";
@@ -587,4 +592,25 @@ public void talking(){         // main story function. Players hit next to progr
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene0");
         }
+        IEnumerator FadeIn(GameObject fadeImage){
+        float alphaLevel = 0;
+        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+        for(int i = 0; i < 100; i++){
+                alphaLevel += 0.01f;
+                yield return null;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                Debug.Log("Alpha is: " + alphaLevel);
+        }
+}
+
+IEnumerator FadeOut(GameObject fadeImage){
+        float alphaLevel = 1;
+        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+        for(int i = 0; i < 100; i++){
+                alphaLevel -= 0.01f;
+                yield return null;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                Debug.Log("Alpha is: " + alphaLevel);
+        }
+}
 }
