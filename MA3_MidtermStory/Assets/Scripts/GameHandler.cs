@@ -11,10 +11,12 @@ public class GameHandler : MonoBehaviour {
 	public static bool sawTent;
 	public static bool sawHotLady;
 	public static bool sawBarrel;
-	public static bool sawRabbit;	
+	public static bool sawRabbit;
 	public static bool helpedZombie;
-	
-	
+	public Texture2D cursorArrow;
+
+
+
 	public static bool GameisPaused = false;
 	public GameObject pauseMenuUI;
 	public AudioMixer mixer;
@@ -33,6 +35,7 @@ public class GameHandler : MonoBehaviour {
 	void Start (){
 		pauseMenuUI.SetActive(false);
 		GameisPaused = false;
+		Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
 	}
 
 	void Update (){
