@@ -27,6 +27,7 @@ public class Scene2aDialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
+        public AudioSource SFXClip1;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -490,6 +491,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "His tummy is indeed very soft, and luckily none of his very pointy bits get anywhere near your delicate human flesh.";
          }
          else if (primeInt == 401){
+           SFXClip1.Play();
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "";
@@ -498,6 +500,7 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "He starts purring, a loud, horrible sound that reminds you of a stalling car.";
          }
          else if (primeInt == 402){
+           SFXClip1.Stop();
            StartCoroutine(FadeOut(ArtChar5));
                   Char1name.text = "";
                   Char1speech.text = "";
