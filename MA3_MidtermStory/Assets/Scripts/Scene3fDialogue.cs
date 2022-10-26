@@ -634,6 +634,6 @@ public void talking(){         // main story function. Players hit next to progr
                SceneManager.LoadScene("Scene4a");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene4b");
+                SceneManager.LoadScene("Scene4c");
         }
 }
