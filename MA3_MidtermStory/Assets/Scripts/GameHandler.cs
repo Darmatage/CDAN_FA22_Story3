@@ -35,7 +35,6 @@ public class GameHandler : MonoBehaviour {
 	void Start (){
 		pauseMenuUI.SetActive(false);
 		GameisPaused = false;
-		Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
 	}
 
 	void Update (){
