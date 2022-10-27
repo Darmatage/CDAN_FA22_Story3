@@ -2493,6 +2493,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1995835027}
     m_Modifications:
+    - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1117386861862475820, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Name
       value: DIALOGUEDISPLAY
@@ -2580,6 +2596,14 @@ PrefabInstance:
     - target: {fileID: 4304300515498290383, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313055996287705671, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313055996287705671, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}

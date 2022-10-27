@@ -1383,8 +1383,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Character 2
 --- !u!1 &1021915328
@@ -1463,8 +1463,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Character 1
 --- !u!1 &1044510597
@@ -1793,8 +1793,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Character 1
 --- !u!1 &1450491682
@@ -3283,8 +3283,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Character 2
 --- !u!222 &2106263622
@@ -3603,6 +3603,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
+    - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.13333334
@@ -3619,6 +3627,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
+    - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 994183570543106248, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.3882353
@@ -3739,6 +3755,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
+    - target: {fileID: 4313055996287705671, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313055996287705671, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4498134246797121255, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.13333334

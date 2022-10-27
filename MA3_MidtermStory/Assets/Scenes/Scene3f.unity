@@ -2261,6 +2261,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
+    - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.13333334
@@ -2277,6 +2285,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
+    - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 994183570543106248, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.3882353
@@ -2397,6 +2413,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
+    - target: {fileID: 4313055996287705671, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313055996287705671, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4498134246797121255, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.13333334
