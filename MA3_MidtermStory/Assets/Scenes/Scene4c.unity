@@ -846,7 +846,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[Don''t.]'
+  m_Text: Don't.
 --- !u!222 &556434768
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1622,7 +1622,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[Pet him.]'
+  m_Text: Pet him.
 --- !u!222 &1070433266
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2028,7 +2028,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[Snarky response.]'
+  m_Text: Snarky response.
 --- !u!222 &1494468495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2242,7 +2242,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[Desperate response.]'
+  m_Text: Desperate response.
 --- !u!222 &1507022658
 CanvasRenderer:
   m_ObjectHideFlags: 0

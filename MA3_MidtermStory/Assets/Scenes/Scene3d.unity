@@ -274,7 +274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stay calm
+  m_Text: Stay calm.
 --- !u!222 &127361505
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -937,7 +937,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: End
+  m_Text: End.
 --- !u!222 &536219921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1484,7 +1484,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stay calm
+  m_Text: Stay calm.
 --- !u!222 &1219895773
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1644,7 +1644,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stay calm
+  m_Text: Stay calm.
 --- !u!222 &1494468495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1858,7 +1858,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Get to the point
+  m_Text: Get to the point.
 --- !u!222 &1507022658
 CanvasRenderer:
   m_ObjectHideFlags: 0
