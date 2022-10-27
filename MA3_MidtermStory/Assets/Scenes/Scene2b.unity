@@ -468,7 +468,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5532592b51c3e4620a4c05fa2e32a2ce, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5532592b51c3e4620a4c05fa2e32a2ce, type: 3}
     m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5532592b51c3e4620a4c05fa2e32a2ce, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -1298,7 +1298,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5532592b51c3e4620a4c05fa2e32a2ce, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -1378,7 +1378,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5532592b51c3e4620a4c05fa2e32a2ce, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -1681,7 +1681,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5532592b51c3e4620a4c05fa2e32a2ce, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -2634,6 +2634,10 @@ PrefabInstance:
       value: 0.05513528
       objectReference: {fileID: 0}
     - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
+    - target: {fileID: 517381429998735008, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_FontData.m_BestFit
       value: 0
       objectReference: {fileID: 0}
@@ -2653,6 +2657,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.13333334
       objectReference: {fileID: 0}
+    - target: {fileID: 923735465194403625, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
     - target: {fileID: 994183570543106248, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.09411765
@@ -2665,6 +2673,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.05882353
       objectReference: {fileID: 0}
+    - target: {fileID: 994183570543106248, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
     - target: {fileID: 1117386861862475820, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Name
       value: DIALOGUEDISPLAY
@@ -2769,6 +2781,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.3137255
       objectReference: {fileID: 0}
+    - target: {fileID: 4313055996287705671, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
     - target: {fileID: 4498134246797121255, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.13333334
@@ -2781,6 +2797,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.13333334
       objectReference: {fileID: 0}
+    - target: {fileID: 4498134246797121255, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
     - target: {fileID: 6620240992604389128, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
       propertyPath: m_Color.b
       value: 0.3137255
@@ -2793,6 +2813,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.3137255
       objectReference: {fileID: 0}
+    - target: {fileID: 6620240992604389128, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8191caf437dca4e06a75cb19dc5a542d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20a68ed76dd4f4e84948581f082ab438, type: 3}
 --- !u!224 &1628722398506394549 stripped
