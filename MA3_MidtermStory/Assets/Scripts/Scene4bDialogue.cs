@@ -1206,7 +1206,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 107){
                 Char1name.text = "YOU";
-                Char1speech.text = "…piece of shit!";
+                Char1speech.text = "…piece of ****!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
