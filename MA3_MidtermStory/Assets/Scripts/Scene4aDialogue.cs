@@ -17,6 +17,7 @@ public class Scene4aDialogue : MonoBehaviour {
         public GameObject ArtChar1;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -29,7 +30,8 @@ public class Scene4aDialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
-        ArtBG1.SetActive(true);
+        ArtBG1.SetActive(false);
+        ArtBG2.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -52,7 +54,7 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(true);
+               ArtChar1.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -70,6 +72,8 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3speech.text = "You think to yourself that you can't win another fight at this rate.";
 		}
 		else if (primeInt == 4){
+      ArtBG1.SetActive(true);
+      ArtBG2.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -87,6 +91,7 @@ public void talking(){         // main story function. Players hit next to progr
 				//gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
+         ArtChar1.SetActive(true);
                 Char1name.text = "Ringmaster";
                 Char1speech.text = "Oh, how foolish can you be, outsider?";
                 Char2name.text = "";
@@ -157,8 +162,8 @@ public void talking(){         // main story function. Players hit next to progr
 
         }
 // ENCOUNTER AFTER CHOICE #1
-       
-        
+
+
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)

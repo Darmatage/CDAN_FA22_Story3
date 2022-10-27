@@ -23,6 +23,7 @@ public class Scene2dDialogue : MonoBehaviour {
 
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice2a;
@@ -33,7 +34,7 @@ public class Scene2dDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
-		private string thisScene; 
+		private string thisScene;
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -43,7 +44,8 @@ void Start(){         // initial visibility settings
 		ArtChar1d.SetActive(false);
 		ArtChar1e.SetActive(false);
 		ArtChar1f.SetActive(false);
-        ArtBG1.SetActive(true);
+        ArtBG1.SetActive(false);
+        ArtBG2.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice2a.SetActive(false);
@@ -51,7 +53,7 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-		
+
 		thisScene = SceneManager.GetActiveScene().name;
 		GameHandler.lastScene = thisScene;
    }
@@ -78,10 +80,11 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
                 Char3speech.text = "You stare back at the rabbit. It runs off and you follow it.";
-				
+
 				GameHandler.sawRabbit=true;
         }
        else if (primeInt ==3){
+         ArtBG1.SetActive(true);
                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
