@@ -34,6 +34,7 @@ public class Scene4bDialogue : MonoBehaviour {
         public GameObject ArtChar5b;
         public GameObject ArtChar5c;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
@@ -59,6 +60,7 @@ void Start(){         // initial visibility settings
         ArtChar5b.SetActive(false);
         ArtChar5c.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         Choice1c.SetActive(false);
@@ -1028,12 +1030,13 @@ public void talking(){         // main story function. Players hit next to progr
                  Char7speech.text = "";
          }
          else if (primeInt ==63){
+           ArtBG2.SetActive(true);
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "";
                   Char2speech.text = "";
                   Char3name.text = "";
-                  Char3speech.text = "You are the last one out of the tent, and you blink as you realize you’re standing in an empty field.";
+                  Char3speech.text = "You are the last one out of the tent, and you blink as you realize you’re standing in an dense forest.";
                   Char4name.text = "";
                   Char4speech.text = "";
                   Char5name.text = "";
