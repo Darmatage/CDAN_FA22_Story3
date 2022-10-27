@@ -15,7 +15,10 @@ public class Scene2cDialogue : MonoBehaviour {
         public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
-       //public GameObject ArtChar2;
+        public GameObject ArtChar2;
+		public GameObject ArtChar3;
+		public GameObject ArtChar4;
+		public GameObject ArtChar5;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -30,6 +33,10 @@ public class Scene2cDialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
+		ArtChar2.SetActive(false);
+		ArtChar3.SetActive(false);
+		ArtChar4.SetActive(false);
+		ArtChar5.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -172,6 +179,8 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3speech.text = "";
 		}
        else if (primeInt ==15){
+				ArtChar1.SetActive(false);
+				ArtChar2.SetActive(true);
                 Char1name.text = "Maggie";
                 Char1speech.text = "HEY! That's Maggies give it back!";
                 Char2name.text = "";
