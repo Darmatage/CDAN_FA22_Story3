@@ -55,6 +55,7 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
+          StartCoroutine(FadeIn(ArtChar1a));
           ArtChar1a.SetActive(true);
           ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
@@ -428,5 +429,27 @@ public void talking(){         // main story function. Players hit next to progr
         public void SceneChange1(){
                SceneManager.LoadScene("End_Win");
         }
+
+        IEnumerator FadeIn(GameObject fadeImage){
+             float alphaLevel = 0;
+             fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+             for(int i = 0; i < 100; i++){
+                     alphaLevel += 0.01f;
+                     yield return null;
+                     fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                     Debug.Log("Alpha is: " + alphaLevel);
+             }
+     }
+
+     IEnumerator FadeOut(GameObject fadeImage){
+             float alphaLevel = 1;
+             fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+             for(int i = 0; i < 100; i++){
+                     alphaLevel -= 0.01f;
+                     yield return null;
+                     fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                     Debug.Log("Alpha is: " + alphaLevel);
+             }
+     }
 
 }

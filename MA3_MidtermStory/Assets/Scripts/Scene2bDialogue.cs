@@ -167,6 +167,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "After a brief moment of silence, her eyes meet yours through the mirror.";
         }
         else if (primeInt == 13){
+           StartCoroutine(FadeIn(ArtChar1a));
           ArtChar1a.SetActive(true);
           ArtChar1b.SetActive(false);
           ArtChar1c.SetActive(false);
@@ -937,5 +938,27 @@ public void talking(){         // main story function. Players hit next to progr
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene3b");
+        }
+
+        IEnumerator FadeIn(GameObject fadeImage){
+                float alphaLevel = 0;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel += 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+        IEnumerator FadeOut(GameObject fadeImage){
+                float alphaLevel = 1;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel -= 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
         }
 }

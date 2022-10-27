@@ -772,7 +772,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You won you married the hot bearded lady!
+  m_Text: Congratulations, you married the hot bearded lady!
 --- !u!222 &1385282095
 CanvasRenderer:
   m_ObjectHideFlags: 0
