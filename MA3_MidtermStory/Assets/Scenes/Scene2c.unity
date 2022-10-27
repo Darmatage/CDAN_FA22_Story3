@@ -426,7 +426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Follow Her Directions
+  m_Text: Follow Her Directions.
 --- !u!222 &536219921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -890,7 +890,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Don't Help Her
+  m_Text: Don't Help Her.
 --- !u!222 &1494468495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Help Her Out
+  m_Text: Help Her Out.
 --- !u!222 &1507022658
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1184,7 +1184,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go back to entrance
+  m_Text: Go back to entrance.
 --- !u!222 &1526418246
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1679,6 +1679,10 @@ MonoBehaviour:
   Char3speech: {fileID: 290838410}
   DialogueDisplay: {fileID: 1628722398506394550}
   ArtChar1: {fileID: 2081576534}
+  ArtChar2: {fileID: 0}
+  ArtChar3: {fileID: 0}
+  ArtChar4: {fileID: 0}
+  ArtChar5: {fileID: 0}
   ArtBG1: {fileID: 1950083101}
   Choice1a: {fileID: 366835721}
   Choice1b: {fileID: 1992480315}
