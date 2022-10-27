@@ -451,7 +451,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("End_Lose");
+               SceneManager.LoadScene("End_Lose2");
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene2b");
