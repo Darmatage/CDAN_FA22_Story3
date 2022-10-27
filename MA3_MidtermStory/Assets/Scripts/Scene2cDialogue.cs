@@ -508,6 +508,8 @@ else if (primeInt == 200){
 				Char3speech.text = "";
 		}
        else if (primeInt ==208){
+				ArtChar1.SetActive(false);
+				ArtChar2.SetActive(true);
                 Char1name.text = "Maggie";
                 Char1speech.text = "HEY! That's Maggies give it back!";
                 Char2name.text = "";
