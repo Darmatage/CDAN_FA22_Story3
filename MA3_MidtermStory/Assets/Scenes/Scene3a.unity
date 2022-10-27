@@ -480,7 +480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: End
+  m_Text: End.
 --- !u!222 &536219921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1466,7 +1466,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Plea for your life
+  m_Text: Plea for your life.
 --- !u!222 &1494468495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1680,7 +1680,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cuss him out
+  m_Text: Cuss him out.
 --- !u!222 &1507022658
 CanvasRenderer:
   m_ObjectHideFlags: 0

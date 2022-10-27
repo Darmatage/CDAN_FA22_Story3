@@ -502,7 +502,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Follow Her Directions
+  m_Text: Follow Her Directions.
 --- !u!222 &536219921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1042,7 +1042,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Don't Help Her
+  m_Text: Don't Help Her.
 --- !u!222 &1494468495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Help Her Out
+  m_Text: Help Her Out.
 --- !u!222 &1507022658
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go back to entrance
+  m_Text: Go back to entrance.
 --- !u!222 &1526418246
 CanvasRenderer:
   m_ObjectHideFlags: 0
