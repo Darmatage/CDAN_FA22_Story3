@@ -125,7 +125,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-                Char3speech.text = "You can barely make out the letters on the sign: Faire Mystico.";
+                Char3speech.text = "You can barely make out the letters on the sign: The Phantom Circus.";
         }
        else if (primeInt == 9){
                 Char1name.text = "";

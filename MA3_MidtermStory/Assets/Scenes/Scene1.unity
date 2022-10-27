@@ -426,7 +426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Look into the tent where you heard the tiger\u2019s growl"
+  m_Text: 'Look into the tent '
 --- !u!222 &536219921
 CanvasRenderer:
   m_ObjectHideFlags: 0
