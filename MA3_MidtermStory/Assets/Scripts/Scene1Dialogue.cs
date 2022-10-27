@@ -19,10 +19,11 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject ArtChar1a; //ringmaster
 		public GameObject ArtChar1b;
 		public GameObject ArtChar1c;
-		//public GameObject ArtChar1d;
+		public GameObject ArtChar1d;
 		//public GameObject ArtChar1e;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -37,11 +38,12 @@ public class Scene1Dialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
-		ArtChar1b.SetActive(false);
-		ArtChar1c.SetActive(false);
-		//ArtChar1d.SetActive(false);
+		    ArtChar1b.SetActive(false);
+    		ArtChar1c.SetActive(false);
+		    ArtChar1d.SetActive(false);
 		//ArtChar1e.SetActive(false);
-        ArtBG1.SetActive(true);
+        ArtBG1.SetActive(false);
+        ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -94,6 +96,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "Having nothing better to do, you decide to drive out to this place and see if the rumors are true.";
         }
        else if (primeInt == 5){
+         StartCoroutine(FadeIn(ArtBG1));
+              ArtBG1.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "At least the circus is actually here.";
                 Char2name.text = "";
@@ -128,6 +132,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "You can barely make out the letters on the sign: The Phantom Circus.";
         }
        else if (primeInt == 9){
+         ArtBG2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -144,7 +149,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "Many smaller tents are scattered around, as well as stalls.";
         }
        else if (primeInt == 11){
-		   ArtChar1a.SetActive(true);
+         ArtChar1a.SetActive(true);
+ 		    ArtChar1b.SetActive(false);
+     		ArtChar1c.SetActive(false);
+ 		    ArtChar1d.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ringmaster";
@@ -170,6 +178,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "A figure makes themselves known from behind one of the stalls, sporting a hat too big for their head and dressed in fancy clothing.";
         }
        else if (primeInt == 14){
+         ArtChar1a.SetActive(false);
+ 		    ArtChar1b.SetActive(false);
+     		ArtChar1c.SetActive(true);
+ 		    ArtChar1d.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -179,6 +191,10 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
        else if (primeInt == 15){
+         ArtChar1a.SetActive(false);
+ 		    ArtChar1b.SetActive(false);
+     		ArtChar1c.SetActive(false);
+ 		    ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Ah, hello!";
                 Char2name.text = "";
@@ -204,8 +220,9 @@ public void talking(){         // main story function. Players hit next to progr
 
         else if (primeInt == 25){
 			ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(false);
-			ArtChar1c.SetActive(true);
+      ArtChar1b.SetActive(false);
+      ArtChar1c.SetActive(true);
+      ArtChar1d.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -246,6 +263,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "You’re unsure whether or not to mention the fact that the circus is literally abandoned, but decide to keep your mouth shut.";
         }
         else if (primeInt == 30){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(false);
                  Char1name.text = "YOU";
                  Char1speech.text = "Okay…so, I had some questions about this place–";
                  Char2name.text = "";
@@ -268,6 +289,10 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         else if (primeInt == 32){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(true);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -286,6 +311,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "Whatever it is, it’s deep, and sounds like it came from the forest just beyond the circus tent.";
         }
         else if (primeInt == 34){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -294,6 +323,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "Out of the corner of your eye, you see the Ringmaster’s pleasant grin drop for a few seconds, replaced by a scowl.";
         }
         else if (primeInt == 35){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(true);
+  		    ArtChar1d.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -310,6 +343,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
         }
         else if (primeInt == 37){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -411,8 +448,8 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt == 103){
             ArtChar1a.SetActive(false);
-          ArtChar1b.SetActive(true);
-          ArtChar1c.SetActive(false);
+          ArtChar1b.SetActive(false);
+          ArtChar1c.SetActive(true);
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "Ringmaster";
@@ -421,6 +458,10 @@ public void talking(){         // main story function. Players hit next to progr
                   Char3speech.text = "";
           }
 		else if (primeInt == 104){
+      ArtChar1a.SetActive(false);
+      ArtChar1b.SetActive(false);
+      ArtChar1c.SetActive(false);
+      ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "This is a weird, mysterious act you're putting on.";
                 Char2name.text = "";
@@ -433,6 +474,10 @@ public void talking(){         // main story function. Players hit next to progr
 
 // ENCOUNTER AFTER CHOICE #1b
        else if (primeInt == 200){
+         ArtChar1a.SetActive(false);
+ 		    ArtChar1b.SetActive(false);
+     		ArtChar1c.SetActive(false);
+ 		    ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "So, uh, are you cosplaying or something?";
                 Char2name.text = "";
@@ -449,6 +494,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3speech.text = "";
         }
         else if (primeInt == 202){
+          ArtChar1a.SetActive(true);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(false);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "";
@@ -457,6 +506,10 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "The Ringmaster gives you a quizzical look, their only response a slight shrug of their shoulders.";
          }
        else if (primeInt == 203){
+         ArtChar1a.SetActive(false);
+ 		    ArtChar1b.SetActive(true);
+     		ArtChar1c.SetActive(false);
+ 		    ArtChar1d.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ringmaster";
@@ -468,6 +521,10 @@ public void talking(){         // main story function. Players hit next to progr
                 //NextScene2Button.SetActive(true);
         }
         else if (primeInt == 204){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(false);
 			ArtChar1a.SetActive(false);
 			ArtChar1b.SetActive(true);
 			ArtChar1c.SetActive(false);
@@ -485,6 +542,10 @@ public void talking(){         // main story function. Players hit next to progr
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Please let go of my hand...thanks.";
                 Char2name.text = "";
@@ -498,6 +559,10 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+          ArtChar1a.SetActive(false);
+  		    ArtChar1b.SetActive(false);
+      		ArtChar1c.SetActive(false);
+  		    ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Nice hat.";
                 Char2name.text = "";
@@ -523,4 +588,27 @@ public void talking(){         // main story function. Players hit next to progr
         public void SceneChange4(){
                 SceneManager.LoadScene("Scene2d");
         }
+
+        IEnumerator FadeIn(GameObject fadeImage){
+                        float alphaLevel = 0;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        for(int i = 0; i < 100; i++){
+                                alphaLevel += 0.01f;
+                                yield return null;
+                                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                                Debug.Log("Alpha is: " + alphaLevel);
+                        }
+                }
+
+                IEnumerator FadeOut(GameObject fadeImage){
+                        float alphaLevel = 1;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        for(int i = 0; i < 100; i++){
+                                alphaLevel -= 0.01f;
+                                yield return null;
+                                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                                Debug.Log("Alpha is: " + alphaLevel);
+                        }
+                }
+
 }

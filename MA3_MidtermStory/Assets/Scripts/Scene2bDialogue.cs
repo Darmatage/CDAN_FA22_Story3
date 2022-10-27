@@ -639,7 +639,7 @@ public void talking(){         // main story function. Players hit next to progr
               Char1name.text = "";
               Char1speech.text = "";
               Char2name.text = "Beatrice";
-              Char2speech.text = "The circus was built in 18xx, founded by our dear Ringmaster. \nIt was a huge success!";
+              Char2speech.text = "The circus was built in 1920, founded by our dear Ringmaster. \nIt was a huge success!";
               Char3name.text = "";
               Char3speech.text = "";
         }
