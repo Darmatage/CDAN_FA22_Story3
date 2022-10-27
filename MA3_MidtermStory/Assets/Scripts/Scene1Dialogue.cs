@@ -234,7 +234,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Ringmaster";
-                 Char2speech.text = "Anywho, you’re at the Faire Mystico! A fine place for anyone looking for a getaway from the monotonous reality we are all subject to!";
+                 Char2speech.text = "Anywho, you’re at The Phantom Circus! A fine place for anyone looking for a getaway from the monotonous reality we are all subject to!";
 				Char3name.text = "";
                 Char3speech.text = "";
 		}
