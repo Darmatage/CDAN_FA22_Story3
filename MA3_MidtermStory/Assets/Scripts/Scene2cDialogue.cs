@@ -28,7 +28,7 @@ public class Scene2cDialogue : MonoBehaviour {
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
-		private string thisScene; 
+		private string thisScene;
 
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
@@ -43,7 +43,7 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-		
+
 		thisScene = SceneManager.GetActiveScene().name;
 		GameHandler.lastScene = thisScene;
    }
@@ -72,7 +72,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text= "";
                 Char3speech.text = "You decide to investigate the barrel to see what noises are coming from it.";
 				GameHandler.sawBarrel=true;
-	
+
         }
 		else if (primeInt == 3){
                 Char1name.text = "";
@@ -97,7 +97,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
 	   }
-	   
+
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -393,7 +393,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
         }
-		
+
 		else if (primeInt == 109){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -402,7 +402,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "You're cut off by a disembodied arm whacking you in the head";
         }
-		
+
 		else if (primeInt == 110){
                 Char1name.text = "Maggie";
                 Char1speech.text = "You think I'll answer a question after you won't even help me! Pfft as if!";
@@ -411,7 +411,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
         }
-		
+
 		else if (primeInt == 111){
                 Char1name.text = "Maggie";
                 Char1speech.text = "I CAN GET OUT ALL BY MYSELF!";
@@ -420,7 +420,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3name.text = "";
 				Char3speech.text = "";
         }
-		
+
 		else if (primeInt == 112){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -508,6 +508,8 @@ else if (primeInt == 200){
 				Char3speech.text = "";
 		}
        else if (primeInt ==208){
+				ArtChar1.SetActive(false);
+				ArtChar2.SetActive(true);
                 Char1name.text = "Maggie";
                 Char1speech.text = "HEY! That's Maggies give it back!";
                 Char2name.text = "";
@@ -645,7 +647,7 @@ else if (primeInt == 200){
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
+                NextScene2Button.SetActive(false);
 	   }
 	}
 
@@ -678,10 +680,10 @@ else if (primeInt == 200){
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-				
+
 				GameHandler.helpedZombie=true;
         }
-		
+
 
 
 
