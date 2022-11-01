@@ -19,6 +19,10 @@ public class Scene0Dialogue : MonoBehaviour {
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
+        public GameObject GrayedButton1;
+        public GameObject GrayedButton2;
+        public GameObject GrayedButton3;
+        public GameObject GrayedButton4;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
@@ -35,6 +39,10 @@ void Start(){         // initial visibility settings
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        GrayedButton1.SetActive(false);
+        GrayedButton2.SetActive(false);
+        GrayedButton3.SetActive(false);
+        GrayedButton4.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
@@ -59,6 +67,10 @@ public void talking(){         // main story function. Players hit next to progr
         }
 		else if (primeInt == 2){
                ArtChar1.SetActive(false);
+               GrayedButton1.SetActive(false);
+               GrayedButton2.SetActive(false);
+               GrayedButton3.SetActive(false);
+               GrayedButton4.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char3speech.text = "You’re back outside.";
@@ -105,6 +117,10 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
         }
        else if (primeInt ==14){
+         GrayedButton1.SetActive(true);
+         GrayedButton2.SetActive(true);
+         GrayedButton3.SetActive(true);
+         GrayedButton4.SetActive(true);
                 Char1name.text = "";
                 Char3speech.text = "You take a look around again, scratching your head as you try to figure out where to go next.";
                 Char2name.text = "";
@@ -129,6 +145,10 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
         }
        else if (primeInt ==21){
+         GrayedButton1.SetActive(true);
+         GrayedButton2.SetActive(true);
+         GrayedButton3.SetActive(true);
+         GrayedButton4.SetActive(true);
                 Char1name.text = "";
                 Char3speech.text = "But for now, you take a glance at the places you haven't been before.";
                 Char2name.text = "";
@@ -153,6 +173,10 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
         }
        else if (primeInt ==31){
+         GrayedButton1.SetActive(true);
+         GrayedButton2.SetActive(true);
+         GrayedButton3.SetActive(true);
+         GrayedButton4.SetActive(true);
                 Char1name.text = "";
                 Char3speech.text = "You think about following her advice and speaking to some of the others.";
                 Char2name.text = "";
@@ -177,6 +201,10 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
         }
        else if (primeInt ==41){
+         GrayedButton1.SetActive(true);
+         GrayedButton2.SetActive(true);
+         GrayedButton3.SetActive(true);
+         GrayedButton4.SetActive(true);
                 Char1name.text = "";
                 Char3speech.text = "In the back of your mind, you wonder: who is Damien? \nOh well, you missed the opportunity.";
                 Char2name.text = "";
