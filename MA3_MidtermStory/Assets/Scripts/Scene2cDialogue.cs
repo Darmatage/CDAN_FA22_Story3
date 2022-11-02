@@ -330,6 +330,8 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3speech.text = "You spin and look away from the barrel";
         }
 		else if (primeInt == 101){
+				ArtChar4.SetActive(true);
+				ArtChar1.SetActive(false);
                 Char1name.text = "Maggie";
                 Char1speech.text = "What do you mean? Are you going to help me out?";
                 Char2name.text = "";
@@ -404,6 +406,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
 		else if (primeInt == 110){
+			    ArtChar4.SetActive(false);
+				ArtChar2.SetActive(true);
                 Char1name.text = "Maggie";
                 Char1speech.text = "You think I'll answer a question after you won't even help me! Pfft as if!";
                 Char2name.text = "";
@@ -558,6 +562,8 @@ else if (primeInt == 200){
 				Char3speech.text = "She says as she uses her separated arm to climb out of the barrel.";
 		}
        else if (primeInt ==214){
+		        ArtChar5.SetActive(true);
+				ArtChar2.SetActive(false);
                 Char1name.text = "Maggie";
                 Char1speech.text = "I should still thank you for helping me, even though I did most of the work.";
                 Char2name.text = "";
@@ -590,6 +596,8 @@ else if (primeInt == 200){
 				Char3speech.text = "She looks at you confused";
 		}
        else if (primeInt ==218){
+		        ArtChar5.SetActive(false);
+				ArtChar3.SetActive(true);
                 Char1name.text = "Maggie";
                 Char1speech.text = "What's there to know? It's a circus, and people come here to have fun!";
                 Char2name.text = "";
@@ -638,6 +646,8 @@ else if (primeInt == 200){
 				Char3speech.text = "You slowly start backing away.";
         }
        else if (primeInt == 224){
+		        ArtChar1.SetActive(true);
+				ArtChar3.SetActive(false);
                 Char1name.text = "Maggie";
                 Char1speech.text = "I can point you in the direction of some of my other friends who also perform here, they're hilarious!";
                 Char2name.text = "";
