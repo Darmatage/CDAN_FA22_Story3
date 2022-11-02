@@ -286,7 +286,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Beatrice";
-                 Char2speech.text = "It’s good to know my charm hasn’t faded.";
+                 Char2speech.text = "It’s good to know that I still have my charm.";
                  Char3name.text = "";
                  Char3speech.text = "";
         }
