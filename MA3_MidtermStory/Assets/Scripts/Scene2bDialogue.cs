@@ -859,8 +859,9 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 322){
+          StartCoroutine(FadeOut(ArtChar1b));
           ArtChar1a.SetActive(false);
-          ArtChar1b.SetActive(false);
+          ArtChar1b.SetActive(true);
           ArtChar1c.SetActive(false);
           ArtChar1d.SetActive(false);
           ArtChar1e.SetActive(false);
@@ -873,6 +874,7 @@ public void talking(){         // main story function. Players hit next to progr
                  Char3speech.text = "";
         }
         else if (primeInt == 323){
+          ArtChar1b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";

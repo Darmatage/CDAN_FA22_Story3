@@ -498,6 +498,7 @@ public void talking(){         // main story function. Players hit next to progr
          ArtChar3b.SetActive(false);
          ArtChar4a.SetActive(false);
          ArtChar5a.SetActive(false);
+         StartCoroutine(FadeIn(ArtChar5b));
          ArtChar5b.SetActive(true);
          ArtChar5c.SetActive(false);
                 Char1name.text = "";
@@ -896,6 +897,7 @@ public void talking(){         // main story function. Players hit next to progr
          ArtChar1b.SetActive(false);
          ArtChar1c.SetActive(false);
          ArtChar2a.SetActive(false);
+         StartCoroutine(FadeOut(ArtChar2b));
          ArtChar2b.SetActive(true);
          ArtChar3a.SetActive(false);
          ArtChar3b.SetActive(true);
@@ -1513,6 +1515,7 @@ public void talking(){         // main story function. Players hit next to progr
            }
        else if (primeInt == 304){
          ArtChar5a.SetActive(false);
+         StartCoroutine(FadeOut(ArtChar5b));
          ArtChar5b.SetActive(true);
          ArtChar5c.SetActive(false);
                 Char1name.text = "";
@@ -1659,6 +1662,7 @@ public void talking(){         // main story function. Players hit next to progr
                       Char7speech.text = "You did good, kid.";
               }
               else if (primeInt == 407){
+                StartCoroutine(FadeOut(ArtChar5a));
                 ArtChar5a.SetActive(true);
                 ArtChar5b.SetActive(false);
                 ArtChar5c.SetActive(false);
